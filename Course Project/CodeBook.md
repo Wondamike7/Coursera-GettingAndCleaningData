@@ -41,85 +41,84 @@ After merging the test and training data, along with the subjects and activities
 1. Subject - integer variable representing the id of the subject, from 1 to 30
 2. Activity - factor variable with 6 levels: 
 
-  1. WALKING
-  2. WALKING_UPSTAIRS
-  3. WALKING_DOWNSTAIRS
-  4. SITTING
-  5. STANDING
-  6. LAYING
+1. WALKING
+2. WALKING_UPSTAIRS
+3. WALKING_DOWNSTAIRS
+4. SITTING
+5. STANDING
+6. LAYING
 
 The remaining variables were all numeric, with values between -1 and 1:
 
-3.	Time-BodyAcc-Mean-X
-4.	Time-BodyAcc-Mean-Y
-5.	Time-BodyAcc-Mean-Z
-6.	Time-GravityAcc-Mean-X
-7.	Time-GravityAcc-Mean-Y
-8.	Time-GravityAcc-Mean-Z
-9.	Time-BodyAccJerk-Mean-X
-10.	Time-BodyAccJerk-Mean-Y
-11.	Time-BodyAccJerk-Mean-Z
-12.	Time-BodyGyro-Mean-X
-13.	Time-BodyGyro-Mean-Y
-14.	Time-BodyGyro-Mean-Z
-15.	Time-BodyGyroJerk-Mean-X
-16.	Time-BodyGyroJerk-Mean-Y
-17.	Time-BodyGyroJerk-Mean-Z
-18.	Time-BodyAccMag-Mean
-19.	Time-GravityAccMag-Mean
-20.	Time-BodyAccJerkMag-Mean
-21.	Time-BodyGyroMag-Mean
-22.	Time-BodyGyroJerkMag-Mean
-23.	Frequency-BodyAcc-Mean-X
-24.	Frequency-BodyAcc-Mean-Y
-25.	Frequency-BodyAcc-Mean-Z
-26.	Frequency-BodyAccJerk-Mean-X
-27.	Frequency-BodyAccJerk-Mean-Y
-28.	Frequency-BodyAccJerk-Mean-Z
-29.	Frequency-BodyGyro-Mean-X
-30.	Frequency-BodyGyro-Mean-Y
-31.	Frequency-BodyGyro-Mean-Z
-32.	Frequency-BodyAccMag-Mean
-33.	Frequency-BodyAccJerkMag-Mean
-34.	Frequency-BodyGyroMag-Mean
-35.	Frequency-BodyGyroJerkMag-Mean
-36.	Time-BodyAcc-StdDev-X
-37.	Time-BodyAcc-StdDev-Y
-38.	Time-BodyAcc-StdDev-Z
-39.	Time-GravityAcc-StdDev-X
-40.	Time-GravityAcc-StdDev-Y
-41.	Time-GravityAcc-StdDev-Z
-42.	Time-BodyAccJerk-StdDev-X
-43.	Time-BodyAccJerk-StdDev-Y
-44.	Time-BodyAccJerk-StdDev-Z
-45.	Time-BodyGyro-StdDev-X
-46.	Time-BodyGyro-StdDev-Y
-47.	Time-BodyGyro-StdDev-Z
-48.	Time-BodyGyroJerk-StdDev-X
-49.	Time-BodyGyroJerk-StdDev-Y
-50.	Time-BodyGyroJerk-StdDev-Z
-51.	Time-BodyAccMag-StdDev
-52.	Time-GravityAccMag-StdDev
-53.	Time-BodyAccJerkMag-StdDev
-54.	Time-BodyGyroMag-StdDev
-55.	Time-BodyGyroJerkMag-StdDev
-56.	Frequency-BodyAcc-StdDev-X
-57.	Frequency-BodyAcc-StdDev-Y
-58.	Frequency-BodyAcc-StdDev-Z
-59.	Frequency-BodyAccJerk-StdDev-X
-60.	Frequency-BodyAccJerk-StdDev-Y
-61.	Frequency-BodyAccJerk-StdDev-Z
-62.	Frequency-BodyGyro-StdDev-X
-63.	Frequency-BodyGyro-StdDev-Y
-64.	Frequency-BodyGyro-StdDev-Z
-65.	Frequency-BodyAccMag-StdDev
-66.	Frequency-BodyAccJerkMag-StdDev
-67.	Frequency-BodyGyroMag-StdDev
-68.	Frequency-BodyGyroJerkMag-StdDev
-
- 
+-	Time-BodyAcc-Mean-X
+-	Time-BodyAcc-Mean-Y
+-	Time-BodyAcc-Mean-Z
+-	Time-GravityAcc-Mean-X
+-	Time-GravityAcc-Mean-Y
+-	Time-GravityAcc-Mean-Z
+-	Time-BodyAccJerk-Mean-X
+-	Time-BodyAccJerk-Mean-Y
+-	Time-BodyAccJerk-Mean-Z
+-	Time-BodyGyro-Mean-X
+-	Time-BodyGyro-Mean-Y
+-	Time-BodyGyro-Mean-Z
+-	Time-BodyGyroJerk-Mean-X
+-	Time-BodyGyroJerk-Mean-Y
+-	Time-BodyGyroJerk-Mean-Z
+-	Time-BodyAccMag-Mean
+-	Time-GravityAccMag-Mean
+-	Time-BodyAccJerkMag-Mean
+-	Time-BodyGyroMag-Mean
+-	Time-BodyGyroJerkMag-Mean
+-	Frequency-BodyAcc-Mean-X
+-	Frequency-BodyAcc-Mean-Y
+-	Frequency-BodyAcc-Mean-Z
+-	Frequency-BodyAccJerk-Mean-X
+-	Frequency-BodyAccJerk-Mean-Y
+-	Frequency-BodyAccJerk-Mean-Z
+-	Frequency-BodyGyro-Mean-X
+-	Frequency-BodyGyro-Mean-Y
+-	Frequency-BodyGyro-Mean-Z
+-	Frequency-BodyAccMag-Mean
+-	Frequency-BodyAccJerkMag-Mean
+-	Frequency-BodyGyroMag-Mean
+-	Frequency-BodyGyroJerkMag-Mean
+-	Time-BodyAcc-StdDev-X
+-	Time-BodyAcc-StdDev-Y
+-	Time-BodyAcc-StdDev-Z
+-	Time-GravityAcc-StdDev-X
+-	Time-GravityAcc-StdDev-Y
+-	Time-GravityAcc-StdDev-Z
+-	Time-BodyAccJerk-StdDev-X
+-	Time-BodyAccJerk-StdDev-Y
+-	Time-BodyAccJerk-StdDev-Z
+-	Time-BodyGyro-StdDev-X
+-	Time-BodyGyro-StdDev-Y
+-	Time-BodyGyro-StdDev-Z
+-	Time-BodyGyroJerk-StdDev-X
+-	Time-BodyGyroJerk-StdDev-Y
+-	Time-BodyGyroJerk-StdDev-Z
+-	Time-BodyAccMag-StdDev
+-	Time-GravityAccMag-StdDev
+-	Time-BodyAccJerkMag-StdDev
+-	Time-BodyGyroMag-StdDev
+-	Time-BodyGyroJerkMag-StdDev
+-	Frequency-BodyAcc-StdDev-X
+-	Frequency-BodyAcc-StdDev-Y
+-	Frequency-BodyAcc-StdDev-Z
+-	Frequency-BodyAccJerk-StdDev-X
+-	Frequency-BodyAccJerk-StdDev-Y
+-	Frequency-BodyAccJerk-StdDev-Z
+-	Frequency-BodyGyro-StdDev-X
+-	Frequency-BodyGyro-StdDev-Y
+-	Frequency-BodyGyro-StdDev-Z
+-	Frequency-BodyAccMag-StdDev
+-	Frequency-BodyAccJerkMag-StdDev
+-	Frequency-BodyGyroMag-StdDev
+-	Frequency-BodyGyroJerkMag-StdDev
+	
 ## Tidy Data Set
 The tidy data set created upon completion of the project had the same variables, but only 180 observations. Each observation provided the average for the variable for the given subject and activity pair (30 subjects * 6 activities = 180 observations).
 
-### References
+## References
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
