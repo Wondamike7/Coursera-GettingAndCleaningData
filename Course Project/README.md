@@ -19,16 +19,16 @@ Within the repository you'll find the run_analysis.R file that performs the data
 ## run_analysis.R script
 The script includes comments for each step, but this readme provides an overview of the steps completed. 
 
-The run_analysis.R script begins by looking for the zip file above, and if not found will download it. The code extracts the data to the default directories.
-Upon unzipping, the data will be in a directory called "UCI HAR Dataset" which will contain the train and test subfolders
+The run_analysis.R script begins by looking for the zip file above, and if not found will download it. The code extracts the data to the default directories. Upon unzipping, the data will be in a directory called "UCI HAR Dataset" which will contain the train and test subfolders
 (For details on the data, please see the Codebook.md file in this repository.)
 
 The script then reads in a series of data tables.
+
 1. features imports the variable names for the main datasets
-	* The script identifies the variables of interest from step 2 above.
-	* Only those variable names with "mean()" or "std()" will be used.
+--* The script identifies the variables of interest from step 2 above.
+--* Only those variable names with "mean()" or "std()" will be used.
 2. train_data imports the data from the "train" subfolder, in the file "X_train.txt"
-	* This data is immediately subsetted by the variables of interest, creating train_sub
+--* This data is immediately subsetted by the variables of interest, creating train_sub
 3. test_data / test_sub do the same from step 2, using the "test" subfolder
 4. train_acty & test_acty import the activity data from "Y_train.txt" and "Y_test.txt" respectively
 5. train_subj & test_subj import the subject data from "subject_train.txt" and "subject_test.txt" respectively
@@ -36,7 +36,8 @@ The script then reads in a series of data tables.
 The script then performs column binds to join all of the test data together and all of the train data together, and then performs a row bind for those two complete data sets.
 
 Using the data in the activity labels text file, the script then applies these activity names as factors for the activity data (Step 3 of the assignment)
-For step 4, the script performs three steps to clean up variable names
+For step 4, the script performs three steps to clean up variable names:
+
 1. Replace "BodyBody" with just "Body" in some variable names
 2. Replace "mean()" with "Mean" and "std()" with "StdDev" to clarify the variable measure
 3. Replace the leading "t" with "Time-" and "f" with "Frequency" to explain the data captured in each variable
