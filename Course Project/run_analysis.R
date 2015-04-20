@@ -1,14 +1,13 @@
 ## This is the code for the Course Project in Getting and Cleaning Data
-## This code should run as long as you have the Samsung data in the working directory
-## It should be in the default unzipped directory of "UCI HAR Dataset"
 
+## first look for the zip file, if not found, download
 setInternet2(use=TRUE) ## needed for accessing https on Windows
 filename <- "getdata_projectfiles_UCI HAR Dataset.zip"
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 if(!filename %in% list.files()) {
 	download.file(url, destfile=filename)
-	unzip(filename)
 }
+unzip(filename) ## unzips the file using the default directory "UCI HAR Dataset" and subdirectories
 	
 ## Read in the features table, which will provide the variable names
 features <- read.table("./UCI HAR Dataset/features.txt",header=FALSE,sep="",quote="",stringsAsFactors = FALSE)
