@@ -26,12 +26,10 @@ The run_analysis.R script begins by looking for the zip file above, and if not f
 The script then reads in a series of data tables.
 
 1. features imports the variable names for the main datasets
-
   * The script identifies the variables of interest from step 2 above.
   * Only those variable names with "mean()" or "std()" will be used.
 
 2. train_data imports the data from the "train" subfolder, in the file "X_train.txt"
-
   * This data is immediately subsetted by the variables of interest, creating train_sub
 3. test_data / test_sub do the same from step 2, using the "test" subfolder
 4. train_acty & test_acty import the activity data from "Y_train.txt" and "Y_test.txt" respectively
