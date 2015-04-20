@@ -1,2 +1,2 @@
-# Coursera-GettingAndReadingData
-Getting and Reading Data Course from Coursera
+# Coursera-GettingAndCleaningData
+Getting and Cleaning Data Course from Coursera
