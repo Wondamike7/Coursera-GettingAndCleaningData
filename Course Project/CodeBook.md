@@ -38,8 +38,9 @@ The project involved capturing only those variables on mean and standard deviati
 
 After merging the test and training data, along with the subjects and activities, the resulting data frame had 10299 observations and 68 columns.
 
-1. Subject - integer variable representing the id of the subject, from 1 to 30
-2. Activity - factor variable with 6 levels: 
+Subject - integer variable representing the id of the subject, from 1 to 30
+
+Activity - factor variable with 6 levels: 
 
 1. WALKING
 2. WALKING_UPSTAIRS
